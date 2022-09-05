@@ -2,29 +2,6 @@ import { useState } from "react";
 import "./ExpenseForm.css";
 
 const ExpenseForm = (props) => {
-  // Birbiriyle ilişkili stateler alttaki gibi beraber tutulabileceği gibi
-  //   const [enteredUserInput, setUserInput] = useState({
-  //     enteredTitle: "",
-  //     enteredAmount: "",
-  //     enteredDate: "",
-  //   });
-  //   const titleChangeHandler = (event) => {
-  //     setUserInput((prevState) => {
-  //       return { ...enteredUserInput, enteredTitle: event.target.value };
-  //     });
-  //   };
-  //   const amountChangeHandler = (event) => {
-  //     setUserInput((prevState) => {
-  //       return { ...enteredUserInput, enteredAmount: event.target.value };
-  //     });
-  //   };
-  //   const dateChangeHandler = (event) => {
-  //     setUserInput((prevState) => {
-  //       return { ...enteredUserInput, enteredDate: event.target.value };
-  //     });
-  //   };
-
-  // ayrı ayrı da tutulabilir. Bu önerilen yöntemdir.
   const [enteredTitle, setTitle] = useState("");
   const [enteredAmount, setAmount] = useState("");
   const [enteredDate, setDate] = useState("");
