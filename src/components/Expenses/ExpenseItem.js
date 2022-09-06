@@ -10,15 +10,17 @@ const ExpenseItem = (props) => {
     setTitle("Updated!");
   };
   return (
-    <Card className="expense-item">
-      <ExpenseDate date={props.date} />
-      <div>
-        <h2>{title}</h2>
-      </div>
-      <div className="expense-item__price">{props.amount}</div>
-      <button onClick={clickHandler}>Change Title</button>
-    </Card>
+    <li>
+      <Card className="expense-item">
+        <ExpenseDate date={props.date} />
+        <div>
+          <h2>{title}</h2>
+        </div>
+        <div className="expense-item__price">{props.amount}</div>
+        <button onClick={clickHandler}>Change Title</button>
+      </Card>
+    </li>
   );
 };
-// tavuk şiş, yoğurtlu köfte, 2 ızgara köfte az piyaz, 4 adana dürüm
+
 export default ExpenseItem;
